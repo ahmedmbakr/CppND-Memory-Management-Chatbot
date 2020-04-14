@@ -19,7 +19,6 @@ private:
 
     // data handles (owned)
     std::vector<std::unique_ptr<GraphNode>> _nodes;
-    std::vector<GraphEdge *> _edges;
 
     ////
     //// EOF STUDENT CODE
@@ -28,6 +27,7 @@ private:
     GraphNode *_currentNode;
     ChatBot *_chatBot;
     ChatBotPanelDialog *_panelDialog;
+    std::vector<GraphEdge *> _edges;//TODO: May be deleted
 
     // proprietary type definitions
     typedef std::vector<std::pair<std::string, std::string>> tokenlist;
